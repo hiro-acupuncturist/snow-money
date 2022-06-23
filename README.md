@@ -1,24 +1,25 @@
-# README
+# 【README】
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリ名 ：snow-money
 
-Things you may want to cover:
+# アプリケーション概要： スノースポーツの支出の把握
 
-* Ruby version
+# URL ：
 
-* System dependencies
+# テスト用アカウント ：
 
-* Configuration
+# 利用方法 ：
 
-* Database creation
+# なぜsnow-moneyが必要か？ ：
 
-* Database initialization
+# 要件定義 ：https://docs.google.com/spreadsheets/d/139Z2VIIpuf7Vy7dABXlDojl-17xsATGxyonjvaabClk/edit#gid=982722306
 
-* How to run the test suite
+# DB設計 ：
 
-* Services (job queues, cache servers, search engines, etc.)
+# 画面遷移図 ：
 
-* Deployment instructions
+# 開発環境 ：
 
-* ...
+# 工夫したポイント ：
+
+
