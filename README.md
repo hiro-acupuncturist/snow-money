@@ -16,7 +16,45 @@
 
 # DB設計 ：
 
-# 画面遷移図 ：
+## usersテーブル
+
+| Column                | Type        | Options                   |
+| --------------------- | ----------- | ------------------------- |
+| name                  | string      | null: false , unique: true|
+| email                 | string      | null: false               |
+| encrypted_password    | string      | null: false               |
+
+
+### Association
+- has_many :trips
+
+## tripsテーブル
+
+| Column                  | Type        | Options                        |
+| ----------------------- | ----------- | ------------------------------ |
+| ski-lift                | integer     |                                |
+| highspeed-rate          | integer     |                                |
+| gosoline-fee            | integer     |                                |
+| food-expenses           | integer     |                                |
+| Miscellaneous-expenses  | integer     |                                |
+| ski-resort              | string      |                                |
+| uesr-id                 | references  | null: false , foreign_key: true|
+
+
+### Association
+- belongs_to :user
+- has_one :comment
+
+## commentsテーブル
+
+| Column                | Type        | Options                        |
+| --------------------- | ----------- | ------------------------------ |
+| memo                  | text        |                                |
+| trip-id               | references  | null: false , foreign_key: true|
+
+
+### Association
+- belongs_to :trip
 
 # 開発環境 ：
 
